@@ -14,6 +14,7 @@ namespace AKong.FrameWork.Data
             : base("name=OA")
         {
         }
+
         public IDbSet<User> Users { get; set; }
     }
 }
