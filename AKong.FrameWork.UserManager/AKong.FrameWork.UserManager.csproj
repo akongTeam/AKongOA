@@ -46,9 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Dto\CreatUserDto.cs" />
+    <Compile Include="Dto\UserDto.cs" />
     <Compile Include="Models\UserControllerResult.cs" />
-    <Compile Include="Dto\UserLoginDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositorise\UserRepository.cs" />
     <Compile Include="Models\UserController.cs" />

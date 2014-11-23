@@ -18,7 +18,7 @@ namespace AKong.FrameWork.UserManager
         }
         public bool IsLogin { get; set; }
 
-        public UserControllerResult Login(UserLoginDto userInfo)
+        public UserControllerResult Login(UserDto userInfo)
         {
             var result = UserControllerResult.CreateDefualtFaild();
             var usr = UserRepository.GetUser(userInfo.UserName);
@@ -36,7 +36,7 @@ namespace AKong.FrameWork.UserManager
             return result;
         }
 
-        public UserControllerResult Create(CreatUserDto registerUser)
+        public UserControllerResult Create(UserDto registerUser)
         {
             var result = UserControllerResult.CreateDefualtFaild();
             try
