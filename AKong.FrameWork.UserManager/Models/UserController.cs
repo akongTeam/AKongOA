@@ -18,9 +18,9 @@ namespace AKong.FrameWork.UserManager
         }
         public bool IsLogin { get; set; }
 
-        public ReturnResult Login(UserLoginDto userInfo)
+        public UserControllerResult Login(UserLoginDto userInfo)
         {
-            var result = ReturnResult.CreateDefualtFaild();
+            var result = UserControllerResult.CreateDefualtFaild();
             var usr = UserRepository.GetUser(userInfo.UserName);
             if (usr.Password == MD5Crypto(userInfo.Password))
             {
@@ -33,7 +33,32 @@ namespace AKong.FrameWork.UserManager
                 result.IsSuccess = false;
                 result.Message = "帐号或密码错误！";
             }
+            return result;
+        }
 
+        public UserControllerResult Create(CreatUserDto registerUser)
+        {
+            var result = UserControllerResult.CreateDefualtFaild();
+            try
+            {
+                using (var context = new OaContext())
+                {
+                    var usr = new User()
+                    {
+                        Password = MD5Crypto(registerUser.Password),
+                        UserName = registerUser.Password
+                    };
+                    context.Users.Add(usr);
+                    context.SaveChanges();
+                    result.IsSuccess = true;
+                    result.Message = "帐号创建成功！";
+                }
+            }
+            catch (Exception ex) 
+            {
+                result.IsSuccess = false;
+                result.Message = ex.Message;
+            }
             return result;
         }
 

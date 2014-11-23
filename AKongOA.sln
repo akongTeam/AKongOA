@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_SolutionItems", "05_Solu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKong.FrameWork.Data", "AKong.FrameWork.Data\AKong.FrameWork.Data.csproj", "{E89DF8BB-E0AB-455C-9638-12F249473B22}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AKong.FrameWork.UserManager", "AKong.FrameWork.UserManager\AKong.FrameWork.UserManager.csproj", "{FABC93EE-0349-42DB-8216-E1D1D359E827}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,11 +27,16 @@ Global
 		{E89DF8BB-E0AB-455C-9638-12F249473B22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E89DF8BB-E0AB-455C-9638-12F249473B22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E89DF8BB-E0AB-455C-9638-12F249473B22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABC93EE-0349-42DB-8216-E1D1D359E827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABC93EE-0349-42DB-8216-E1D1D359E827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABC93EE-0349-42DB-8216-E1D1D359E827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABC93EE-0349-42DB-8216-E1D1D359E827}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E89DF8BB-E0AB-455C-9638-12F249473B22} = {0DD158C9-4B83-434B-9F5D-6996D60BB630}
+		{FABC93EE-0349-42DB-8216-E1D1D359E827} = {0DD158C9-4B83-434B-9F5D-6996D60BB630}
 	EndGlobalSection
 EndGlobal
